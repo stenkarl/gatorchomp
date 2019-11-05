@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gator
+    uniqueID: 1240993893
+    locked: 0
