@@ -13,10 +13,18 @@ public class PadController : MonoBehaviour
     void Start()
     {
         GenerateNext();
+
     }
 
     private void OnMouseDown() {
         Debug.Log("Clicked ");
+        GameManager manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        Animator gator = GameObject.Find("Gator1").GetComponent<Animator>();
+
+        Debug.Log("gator " + gator);
+
+        gator.SetTrigger("GatorChompActivate");
     }
 
 
